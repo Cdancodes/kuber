@@ -62,7 +62,7 @@ const Navbar = () => {
             <Header />
             <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div className="flex items-center justify-center h-16">
-                    
+
                     <div className="hidden md:flex items-center space-x-8">
                         {navLinks.map((link) => (
                             <a
@@ -140,10 +140,14 @@ const Navbar = () => {
                             key={link.title}
                             href={link.path}
                             onClick={toggleMenu}
-                            className="text-gray-700 px-3 py-4 text-lg font-medium border-b border-gray-200 dark:border-gray-700 hover:scale-125 transition-transform duration-200 hover:text-defaultColor hover:font-semibold"
+                            className="text-gray-700 px-3 py-4 text-lg font-medium border-b border-gray-200 dark:border-gray-700 
+                                  hover:scale-110 hover:text-[#CFA500] hover:font-semibold 
+                                  hover:drop-shadow-[0_0_5px_#CFA500]
+                                  transition-transform duration-300 ease-in-out"
                         >
                             {link.title}
                         </a>
+
                     ))}
                 </div>
             </div>

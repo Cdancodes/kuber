@@ -1,8 +1,11 @@
 import React from 'react';
+import Carousel from './carousel/page'
 
 const page = () => {
   return (
-    <div className='bg-slate-400'>page</div>
+    <>
+     <Carousel />
+    </>
   )
 }
 

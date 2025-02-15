@@ -21,7 +21,7 @@ module.exports = {
         BrownMid: "#AA6142",
         defaultColor: "#000000",
         textColor: "#FFFFFF",
-        footerColor: "#F6F4F2",
+        footerColor: "#170500",
         BlackDark: "#0D0D0D",
         MidDark: "#2C2C2C"
       },
