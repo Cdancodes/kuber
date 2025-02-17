@@ -57,7 +57,7 @@ const Navbar = () => {
     return (
 
         <nav
-            className="fixed w-full z-50 transition-all duration-300 bg-gradient-to-r from-BrownDark via-BrownMid to-BrownDark"
+            className="w-full z-50 transition-all duration-300 bg-gradient-to-r from-BrownDark via-BrownMid to-BrownDark fixed overflow-hidden"
         >
             <Header />
             <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">

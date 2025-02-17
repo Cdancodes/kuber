@@ -23,7 +23,9 @@ module.exports = {
         textColor: "#FFFFFF",
         footerColor: "#170500",
         BlackDark: "#0D0D0D",
-        MidDark: "#2C2C2C"
+        MidDark: "#2C2C2C",
+        MidYellow: "#FFB700",
+        DarkYellow: "#C28D05",
       },
       fontFamily: {
         grandiflora: ["Grandiflora One"],
