@@ -19,20 +19,21 @@ const Purity = () => {
     ]
 
     return (
-        <section class="text-gray-600 body-font">
-            <div class="container px-5 py-10 mx-auto">
+        <section className="text-gray-600 body-font">
+            <div className="container px-5 py-10 mx-auto">
 
                 <PageTitle title="Purity on Instagram" />
 
-                <div class="flex flex-wrap mt-4">
+                <div className="flex flex-wrap mt-4">
                     {data?.map((item, i) => (
-                        <div key={i} class="lg:w-1/5 md:w-1/2 p-4 w-full">
-                            <a class="block relative h-48 rounded overflow-hidden">
+                        <div key={i} className="lg:w-1/5 md:w-1/2 p-4 w-full ">
+                            <a className="block relative h-48 rounded overflow-hidden">
                                 <Image
                                     alt="ecommerce"
                                     height={100}
+                                    layout='responsive'
                                     width={100}
-                                    class="object-cover object-center w-full h-full block"
+                                    className="object-cover object-center w-full h-full hover:scale-110 inline-block transition-transform duration-200 hover:shadow-xl"
                                     src={item.img} />
                             </a>
                         </div>

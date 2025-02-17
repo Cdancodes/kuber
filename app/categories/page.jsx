@@ -20,6 +20,7 @@ const page = () => {
     { id: 4, title: "Bangles" },
   ];
 
+  const sty = "w-full h-full object-cover object-center block hover:scale-105 inline-block transition-transform duration-200";
 
   return (
     <section className="text-gray-600 body-font">
@@ -54,7 +55,7 @@ const page = () => {
             <div className="md:p-2 p-1 w-full">
               <Image
                 alt="gallery"
-                className="w-full h-full object-cover object-center block"
+                className={sty}
                 height={100}
                 width={100}
                 layout='responsive'
@@ -63,7 +64,7 @@ const page = () => {
             <div className="md:p-2 p-1 w-1/2">
               <Image
                 alt="gallery"
-                className="w-full object-cover h-full object-center block"
+                className={sty}
                 height={100}
                 width={100}
                 layout='responsive'
@@ -72,7 +73,7 @@ const page = () => {
             <div className="md:p-2 p-1 w-1/2">
               <Image
                 alt="gallery"
-                className="w-full object-cover h-full object-center block"
+                className={sty}
                 height={100}
                 layout='responsive'
                 width={100}
@@ -83,7 +84,7 @@ const page = () => {
             <div className="md:p-2 p-1 w-1/2">
               <Image
                 alt="gallery"
-                className="w-full object-cover h-full object-center block"
+                className={sty}
                 height={100}
                 layout='responsive'
                 width={100}
@@ -92,7 +93,7 @@ const page = () => {
             <div className="md:p-2 p-1 w-1/2">
               <Image
                 alt="gallery"
-                className="w-full object-cover h-full object-center block"
+                className={sty}
                 height={100}
                 layout='responsive'
                 width={100}
@@ -101,7 +102,7 @@ const page = () => {
             <div className="md:p-2 p-1 w-full">
               <Image
                 alt="gallery"
-                className="w-full h-full object-cover object-center block"
+                className={sty}
                 height={100}
                 layout='responsive'
                 width={100}

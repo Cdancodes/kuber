@@ -53,7 +53,7 @@ const Footer = () => {
       <NewsLetter />
 
       {/* Main Footer Content */}
-      <div className="container mx-auto px-4 pt-32 pb-16 bg-footerColor">
+      <div className="mx-auto px-[8%] pt-32 pb-16 bg-footerColor">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* About Section */}
           <div className="space-y-6">
