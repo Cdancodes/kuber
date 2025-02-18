@@ -8,7 +8,7 @@ const antonFont = Anton({
 
 const PageTitle = ({ title }) => {
     return (
-        <h1 className={`${antonFont.className} sm:text-5xl text-2xl mx-auto font-bold title-font text-defaultColor lg:w-1/3 lg:mb-0 mb-4`}>{title}</h1>
+        <h1 className={`${antonFont.className} flex justify-center sm:text-5xl text-2xl mx-auto font-bold title-font text-defaultColor lg:w-1/3 lg:mb-0 mb-4`}>{title}</h1>
     )
 }
 

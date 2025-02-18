@@ -22,7 +22,7 @@ const Testimonial = () => {
                 <div className="flex flex-wrap -m-4">
                     {data?.map((item, i) => (
                         <div key={i} className="lg:w-1/3 lg:mb-0 mb-6 p-4">
-                            <div className="h-full flex flex-col justify-center text-center hover:scale-110 inline-block transition-transform duration-200 space-y-2">
+                            <div className="h-full flex-col justify-center text-center hover:scale-110 inline-block transition-transform duration-200 space-y-2">
                                 <div className='w-20 h-20 mx-auto'>
                                     <Image
                                         src={item.img}

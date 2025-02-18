@@ -1,65 +1,63 @@
-"use client";
+"use client"
 
-import React from "react";
-import Image from "next/image";
-import img1 from "@/public/assets/spotted/img1.png";
-import img2 from "@/public/assets/spotted/img2.png";
-import img3 from "@/public/assets/spotted/img3.png";
-import PageTitle from "../pageTitle/PageTitle";
+import React from 'react';
+import Rectangle67 from '@/public/assets/spotted/Rectangle67.png';
+import Rectangle68 from '@/public/assets/spotted/Rectangle68.png';
+import Rectangle69 from '@/public/assets/spotted/Rectangle69.png';
+import PageTitle from '../pageTitle/PageTitle';
+import Image from 'next/image';
 
+const spottedData = [
+    { src: Rectangle67, text: "" },
+    { src: Rectangle68, text: "" },
+    { src: Rectangle69, text: "" }
+];
 
 const Spotted = () => {
     return (
-        <section className="w-full h-full flex flex-col justify-center sm:py-8 md:py-10">
-            <div className="text-center w-full mb-6 sm:mb-8 md:mb-10">
+        <div className='w-full px-4 sm:px-8 md:px-12 lg:px-16 py-8 sm:py-12 md:py-16'>
+            {/* Title Section */}
+            <div className="mb-8 sm:mb-12">
                 <PageTitle title="Spotted on" />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 gap-1 sm:gap-2 md:gap-3 mx-auto">
 
-                <div
-                    className="flex items-center justify-center p-2 hover:scale-105 transition-transform duration-300"
-                >
-                    <div className="relative w-full aspect-square">
-                        <Image
-                            src={img1}
-                            alt="img"
-                            layout="responsive"
-                            height={100}
-                            width={100}
-                            className="w-full "
-                        />
-                    </div>
-                </div>
+            {/* Grid Section */}
+            <div className="w-full max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                    {spottedData.map((item, index) => (
+                        <div 
+                            key={index} 
+                            className="group w-full transition-all duration-300 ease-in-out"
+                        >
+                            {/* Image Container */}
+                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg 
+                                          border-2 border-gray-200 border-opacity-60 
+                                          shadow-lg transition-all duration-300 ease-in-out
+                                          group-hover:shadow-xl group-hover:scale-[1.02]"
+                            >
+                                <Image 
+                                    alt={`Spotted image ${index + 1}`}
+                                    src={item.src}
+                                    layout='responsive'
+                                    sizes="(max-width: 640px) 90vw, 
+                                           (max-width: 1024px) 45vw, 
+                                           30vw"
+                                    className="object-cover object-center"
+                                    priority={index === 0}
+                                />
+                            </div>
 
-                <div
-                    className="flex items-center justify-center p-2 hover:scale-105 transition-transform duration-300"
-                >
-                    <div className="relative w-full aspect-square">
-                        <Image
-                            src={img1}
-                            alt="img"
-                            layout="responsive"
-                            height={100}
-                            width={100}
-                        />
-                    </div>
-                </div>
-
-                <div
-                    className="flex items-center p-2 hover:scale-105 transition-transform duration-300"
-                >
-                    <div className="relative w-full aspect-square">
-                        <Image
-                            src={img1}
-                            alt="img"
-                            layout="responsive"
-                            height={100}
-                            width={100}
-                        />
-                    </div>
+                            {/* Optional Text */}
+                            {item.text && (
+                                <p className="mt-4 text-base text-center font-medium text-gray-800">
+                                    {item.text}
+                                </p>
+                            )}
+                        </div>
+                    ))}
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 
