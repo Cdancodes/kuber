@@ -3,26 +3,26 @@
 
 import React from 'react';
 import CarouselImg from '../components/carouselimg/page';
-import carImg from '@/public/assets/ankle/Cimg.png';
+import carImg from '@/public/assets/All/Cimg.png';
 import Accordion from '../components/according/page';
 import Card from '../components/cards/page';
 
 
-import img1 from '@/public/assets/ankle/img1.png';
-import img2 from '@/public/assets/ankle/img2.png';
-import img3 from '@/public/assets/ankle/img3.png';
-import img4 from '@/public/assets/ankle/img4.png';
-import img5 from '@/public/assets/ankle/img5.png';
-import img6 from '@/public/assets/ankle/img6.png';
-import img7 from '@/public/assets/ankle/img7.png';
-import img8 from '@/public/assets/ankle/img8.png';
-import img9 from '@/public/assets/ankle/img9.png';
-import img10 from '@/public/assets/ankle/img10.png';
-import img11 from '@/public/assets/ankle/img11.png';
-import img12 from '@/public/assets/ankle/img12.png';
-import img13 from '@/public/assets/ankle/img13.png';
-import img14 from '@/public/assets/ankle/img14.png';
-import img15 from '@/public/assets/ankle/img15.png';
+import img1 from '@/public/assets/All/img1.png';
+import img2 from '@/public/assets/All/img2.png';
+import img3 from '@/public/assets/All/img3.png';
+import img4 from '@/public/assets/All/img4.png';
+import img5 from '@/public/assets/All/img5.png';
+import img6 from '@/public/assets/All/img6.png';
+import img7 from '@/public/assets/All/img7.png';
+import img8 from '@/public/assets/All/img8.png';
+import img9 from '@/public/assets/All/img9.png';
+import img10 from '@/public/assets/All/img10.png';
+import img11 from '@/public/assets/All/img11.png';
+import img12 from '@/public/assets/All/img12.png';
+import img13 from '@/public/assets/All/img13.png';
+import img14 from '@/public/assets/All/img14.png';
+import img15 from '@/public/assets/All/img15.png';
 
 
 const All  = () => {
