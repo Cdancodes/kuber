@@ -18,9 +18,9 @@ const Navbar = () => {
     const navLinks = [
         { title: "Home", path: "/" },
         { title: "Necklaces", path: "/necklace" },
-        { title: "Bangles", path: "/bangles" },
+        { title: "Bracelet", path: "/bracelet" },
         { title: "Rings", path: "/ring" },
-        { title: "Earrings", path: "/earrings" },
+        { title: "Pendent", path: "/pendent" },
         { title: "Ankle Bracelets", path: "/ankle" },
         { title: "All", path: "/all" },
         { title: "Track My Order", path: "/" },

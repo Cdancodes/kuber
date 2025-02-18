@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const CarouselImg = ({ Img }) => {
   return (
-    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[80vh] overflow-hidden">
+    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[80vh] overflow-hidden pt-10">
       <Image
         src={Img}
         alt="Carousel image"
