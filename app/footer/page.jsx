@@ -110,10 +110,10 @@ const Footer = () => {
             <h2 className="font-semibold text-BrownMid tracking-widest text-md mb-6">ABOUT US</h2>
             <div className="space-y-3 flex flex-col">
               <p className={sty}>
-                <strong>Email: </strong> berra_jewel@gmail.com
+                <strong>Email: </strong>kuberdiamond7@gmail.com
               </p>
               <p className={sty}>
-                <strong>Phone: </strong> +91 123456789
+                <strong>Phone: </strong>+91 99994 14148
               </p>
             </div>
           </div>
