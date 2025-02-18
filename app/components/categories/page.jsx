@@ -9,7 +9,7 @@ import simg3 from '@/public/assets/categories/img3.png';
 import simg4 from '@/public/assets/categories/img4.png';
 import Limg1 from '@/public/assets/categories/Limg1.png';
 import Limg2 from '@/public/assets/categories/Limg2.png';
-import PageHeading from '../components/pageTitle/PageTitle';
+import PageHeading from '../pageTitle/PageTitle';
 
 const page = () => {
 

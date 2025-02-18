@@ -3,12 +3,14 @@
 
 import React from 'react';
 import Carousel from './carousel/page';
-import Categories from './categories/page';
-import About from './about/About';
-import Testimonial from './testimonial/Testimonial';
+// import Categories from './components/categories/categories';
+import Categories from "./components/categories/page";
+import About from './components/about/About';
+import Testimonial from './components/testimonial/Testimonial';
 import Spotted from './components/spotted/Spotted';
-import FeatureBanner from './featureBanner/page';
-import Trendy from './trendy/Trendy';
+import FeatureBanner from './components/featureBanner/page';
+import Trendy from './components/trendy/Trendy';
+import Occasion from './components/occasion/Ocassion';
 
 const page = () => {
   return (
@@ -17,6 +19,7 @@ const page = () => {
       <Categories />
       <FeatureBanner />
       <Trendy />
+      <Occasion />
       <Spotted />
       <Testimonial />
       <About />

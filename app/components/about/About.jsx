@@ -4,7 +4,7 @@
 import React from 'react';
 import AboutImg from '@/public/assets/about/aboutImg.png';
 import Image from 'next/image';
-import CustomButton from '../components/customButton/CustomButton';
+import CustomButton from '../customButton/CustomButton';
 
 const About = () => {
     return (
