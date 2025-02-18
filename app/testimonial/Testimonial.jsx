@@ -17,8 +17,8 @@ const Testimonial = () => {
     ];
 
     return (
-        <section className="text-gray-600 body-font px-5">
-            <div className="container px-8 py-24 mx-auto">
+        <section className="text-gray-600 body-font">
+            <div className="container px-[8%] py-24 mx-auto">
                 <div className="flex flex-wrap -m-4">
                     {data?.map((item, i) => (
                         <div key={i} className="lg:w-1/3 lg:mb-0 mb-6 p-4">

@@ -1,11 +1,14 @@
 
 "use client";
 
-import Img from "@/public/assets/carousel/bimg.png";
+// import Img from "@/public/assets/carousel/bimg.png";
 import Image from "next/image";
 import { Antic_Slab, Poppins } from "next/font/google";
-import CustomButton from "../components/customButton/CustomButton";
-import Gimg from '@/public/assets/carousel/Cimg.png';
+// import CustomButton from "../components/customButton/CustomButton";
+// import Gimg from '@/public/assets/carousel/Cimg.png';
+import manbgimg from '@/public/assets/carousel/manbgimg.png';
+import sideimage from '@/public/assets/carousel/sideimage.png';
+import { motion } from 'framer-motion';
 
 const anticSlab = Antic_Slab({
   subsets: ["latin"],
@@ -20,48 +23,78 @@ const poppins = Poppins({
 
 const Carousel = () => {
 
+
+
   return (
-    <div
-      className="relative w-full group"
-    >
-      <div
-        className="w-full transition-transform duration-500 ease-out"
-      >
+    <div className='relative w-full lg:px-16 pt-28 md:pt-0 md:px-10'>
+      {/* Background Image Container with Next.js Image */}
+      <div className="hidden md:block absolute inset-0 w-full h-[74vh] -z-10">
         <Image
-          src={Img}
-          alt="img"
+          src={manbgimg}
+          alt="Background"
           layout="responsive"
+          // fill
+          // priority
           height={100}
           width={100}
-          loading="lazy"
-          className="hidden md:block lg:block sm:block"
+          className="object-cover"
+          sizes="100vw"
+          quality={90}
         />
+      </div>
 
-        <div className="absolute inset-0">
-          <div className="absolute justify-center items-center flex left-0 w-full top-1/2 transform -translate-y-1/2 space-y-4">
-
-            <div className="w-1/2 p-4 space-y-4">
-              <h2 className={`${anticSlab.className} text-3xl md:text-5xl font-grandiflora mb-0 md:mb-4 text-defaultColor leading-tight md:leading-[3rem]`}>
-                IMPECCABLE
-                <span className="block md:my-4">CRAFTSMANSHIP AND</span>
-                FINESSE
-              </h2>
-
-              <p className={` ${poppins.className} w-[70%] break-words text-xs md:text-sm text-[#787054] font-light tracking-wider`}>
-                An example of intricate workmanship and detail, elegant necklaces and long and short chains form a part of our desirable collection.
+      <div className="relative text-gray-600 body-font h-[74vh] w-full flex items-center justify-center">
+        <section className="w-full text-gray-600 body-font">
+          <div className="container mx-auto flex flex-col-reverse md:flex-row items-center px-5 md:px-10 lg:px-16 md:gap-4 lg:gap-0">
+            {/* Left Content with Animation */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="md:w-1/2 w-full z-20 text-center flex flex-col items-center md:items-start mb-10 md:mb-0 md:text-left"
+            >
+              <h1 className={` ${anticSlab.className} title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 font-anticSlab`}>
+                IMPECCABLE CRAFTSMANSHIP 
+                <br className="hidden lg:inline-block" />AND FINESSE
+              </h1>
+              <p className="mb-8 leading-relaxed max-w-md text-defaultColor sm:text-[#787054]">
+                An example of intricate workmanship and details, elegant necklaces and long and short chains form a part of our desirable collection.
               </p>
 
-              <CustomButton
-                title="Explore Now"
-              />
-            </div>
+              <motion.button
+                whileHover={{ scale: 1.1, boxShadow: "0px 0px 15px rgba(255, 183, 0, 0.7)" }}
+                whileTap={{ scale: 0.9 }}
+                className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none 
+              hover:bg-indigo-600 rounded-full text-lg bg-gradient-to-r from-[#FFB700] to-[#dba51c] shadow-lg 
+              shadow-yellow-500/50"
+              >
+                Explore Now
+              </motion.button>
+            </motion.div>
 
-            <div className="w-[20%] h-[20%]">
-              <Image src={Gimg} alt="img" layout='responsive' width={100} height={100} className="mx-auto" />
-            </div>
-
+            {/* Right Image with Animation */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+              className="md:w-1/2 w-full flex justify-center md:justify-end text-center items-center"
+            >
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="relative h-[50vh] md:h-[45vh] lg:h-[65vh] w-full md:w-auto"
+              >
+                <Image
+                  src={sideimage}
+                  alt="Hero"
+                  layout='responsive'
+                  height={100}
+                  width={100}
+                  className="object-cover rounded z-10"
+                />
+              </motion.div>
+            </motion.div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );

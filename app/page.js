@@ -12,7 +12,7 @@ import Trendy from './trendy/Trendy';
 
 const page = () => {
   return (
-    <div className='pt-36'>
+    <div className='pt-20 sm:pt-36'>
       <Carousel />
       <Categories />
       <FeatureBanner />

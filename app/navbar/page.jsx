@@ -118,7 +118,7 @@ const Navbar = () => {
                 className={`md:hidden fixed inset-0 z-40 h-full bg-goldMid transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
-                <div className="w-full justify-between flex items-center p-4 bg-gradient-to-r from-BrownDark via-BrownMid to-BrownDark">
+                <div className="w-full justify-between flex items-center p-4 bg-gradient-to-r from-BrownDark via-BrownMid to-BrownDark bg-BrownMid">
                     <div>
                         <Image
                             src={Brand}
@@ -134,21 +134,21 @@ const Navbar = () => {
                         className="text-white h-6 w-6 font-bold" />
                 </div>
 
-                <div className="flex flex-col h-full py-5 px-4">
+                <div className="flex flex-col h-full py-5 px-4 bg-BrownDark">
                     {navLinks.map((link) => (
                         <a
                             key={link.title}
                             href={link.path}
                             onClick={toggleMenu}
-                            className="text-gray-700 px-3 py-4 text-lg font-medium border-b border-gray-200 dark:border-gray-700 
+                            className="px-3 py-4 text-lg font-medium border-b border-gray-200 dark:border-white 
                                   hover:scale-110 hover:text-[#CFA500] hover:font-semibold 
                                   hover:drop-shadow-[0_0_5px_#CFA500]
-                                  transition-transform duration-300 ease-in-out"
+                                  transition-transform duration-300 ease-in-out text-white"
                         >
                             {link.title}
                         </a>
 
-                    ))}
+                    ))}f
                 </div>
             </div>
         </nav>
