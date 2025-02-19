@@ -8,6 +8,7 @@ import { AiOutlineReload } from 'react-icons/ai';
 import { MdPrivacyTip } from 'react-icons/md';
 import NewsLetter from '../components/newsLetter/NewsLetter';
 import Purity from '../components/purity/Purity';
+import Link from "next/link";
 
 const Footer = () => {
 
@@ -25,15 +26,13 @@ const Footer = () => {
     }
   ];
 
-
   const NavItems = [
-    { title: "Home", path: "#" },
-    { title: "Necklaces", path: "#" },
-    { title: "Bracelets", path: "#" },
-    { title: "Rings", path: "#" },
-    { title: "Earrings", path: "#" },
-    { title: "Ankle Bracelets", path: "#" },
-    { title: "All", path: "#" },
+    { title: "Home", path: "/" },
+    { title: "Necklaces", path: "/necklace" },
+    { title: "Bracelet", path: "/bracelet" },
+    { title: "Rings", path: "/rings" },
+    { title: "Pendent", path: "/pendent" },
+    { title: "Ankle Bracelets", path: "/ankle" }
   ];
 
   const services = [
@@ -106,16 +105,32 @@ const Footer = () => {
           </div>
 
           {/* Contact Section */}
-          <div>
-            <h2 className="font-semibold text-BrownMid tracking-widest text-md mb-6">ABOUT US</h2>
-            <div className="space-y-3 flex flex-col">
-              <p className={sty}>
-                <strong>Email: </strong>kuberdiamond7@gmail.com
-              </p>
-              <p className={sty}>
-                <strong>Phone: </strong>+91 99994 14148
-              </p>
+          <div className='flex flex-col space-y-4'>
+            <div>
+              <h2 className="font-semibold text-BrownMid tracking-widest text-md mb-6">ABOUT US</h2>
+              <div className="space-y-3 flex flex-col">
+                <p className={sty}>
+                  <strong>Email: </strong>kuberdiamond7@gmail.com
+                </p>
+                <p className={sty}>
+                  <strong>Phone: </strong>+91 99994 14148
+                </p>
+              </div>
             </div>
+
+            <div>
+              <h2 className="font-semibold text-BrownMid tracking-widest text-md mb-6">
+                SERVICES
+              </h2>
+              <ul>
+                <li className={sty}>
+                  <Link href="/terms">
+                    Terms & Conditions
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </div>
