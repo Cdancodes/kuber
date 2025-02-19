@@ -36,7 +36,7 @@ const Carousel = () => {
           // priority
           height={100}
           width={100}
-          className="object-cover"
+          className="object-cover "
           sizes="100vw"
           quality={90}
         />
@@ -50,7 +50,7 @@ const Carousel = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="md:w-1/2 w-full z-20 text-center flex flex-col items-center md:items-start mb-10 md:mb-0 md:text-left pt-20"
+              className="md:w-1/2 w-full z-20 text-center flex flex-col items-center md:items-start mb-10 md:mb-0 md:text-left pt-32"
             >
               <h1 className={`${anticSlab.className} title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 font-anticSlab`}>
                 IMPECCABLE CRAFTSMANSHIP 

@@ -23,7 +23,7 @@ const Navbar = () => {
         { title: "Pendent", path: "/pendent" },
         { title: "Ankle Bracelets", path: "/ankle" },
         { title: "All", path: "/all" },
-        { title: "Track My Order", path: "/" }
+        // { title: "Track My Order", path: "/" }
     ];
 
     useEffect(() => {
@@ -60,7 +60,7 @@ const Navbar = () => {
             className="w-full z-50 transition-all duration-300 bg-gradient-to-r from-BrownDark via-BrownMid to-BrownDark fixed overflow-hidden"
         >
             <Header />
-            <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-3 px-2">
+            <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-4 sm:py-0 px-2">
                 <div className="flex items-center justify-center h-16">
 
                     <div className="hidden md:flex items-center space-x-8">
@@ -87,7 +87,7 @@ const Navbar = () => {
                         </button>
                     </div>
 
-                    <div className="md:hidden py-3 flex items-center justify-between w-full bg-gradient-to-r from-BrownDark via-BrownMid to-BrownDark">
+                    <div className="md:hidden flex items-center justify-between w-full bg-gradient-to-r from-BrownDark via-BrownMid to-BrownDark">
 
                         <div  className="w-full h-full p-3">
                             <Image

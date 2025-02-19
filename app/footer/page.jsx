@@ -35,12 +35,12 @@ const Footer = () => {
     { title: "Ankle Bracelets", path: "/ankle" }
   ];
 
-  const services = [
-    { icon: <BiSolidPlane className="w-8 h-8 md:w-10 md:h-10 text-defaultColor" />, title: "FREE TRACKED DELIVERY" },
-    { icon: <AiOutlineReload className="w-8 h-8 md:w-10 md:h-10 text-defaultColor" />, title: "QUICK RETURNS AND EXCHANGE" },
-    { icon: <BiSupport className="w-8 h-8 md:w-10 md:h-10 text-defaultColor" />, title: "24X7 CUSTOMER SERVICE" },
-    { icon: <MdPrivacyTip className="w-8 h-8 md:w-10 md:h-10 text-defaultColor" />, title: "100% SECURE PAYMENT" },
-  ];
+  // const services = [
+  //   { icon: <BiSolidPlane className="w-8 h-8 md:w-10 md:h-10 text-defaultColor" />, title: "FREE TRACKED DELIVERY" },
+  //   { icon: <AiOutlineReload className="w-8 h-8 md:w-10 md:h-10 text-defaultColor" />, title: "QUICK RETURNS AND EXCHANGE" },
+  //   { icon: <BiSupport className="w-8 h-8 md:w-10 md:h-10 text-defaultColor" />, title: "24X7 CUSTOMER SERVICE" },
+  //   { icon: <MdPrivacyTip className="w-8 h-8 md:w-10 md:h-10 text-defaultColor" />, title: "100% SECURE PAYMENT" },
+  // ];
 
   const sty = "text-slate-50 hover:text-BrownMid hover:scale-110 inline-block transition-transform duration-200 hover:text-goldMid cursor-pointer"
 
