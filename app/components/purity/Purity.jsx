@@ -1,3 +1,6 @@
+
+"use client"
+
 import React from 'react';
 import Image from 'next/image';
 import Img1 from '@/public/assets/purity/img1.png';

@@ -8,10 +8,16 @@ import Accordion from '../components/according/page';
 import Card from '../components/cards/page';
 
 
-import img1 from '@/public/assets/necklaces/img1.png';
-import img2 from '@/public/assets/necklaces/img2.png';
-import img3 from '@/public/assets/necklaces/img3.png';
-import img4 from '@/public/assets/necklaces/img4.png';
+// import img1 from '@/public/assets/necklaces/img1.png';
+// import img2 from '@/public/assets/necklaces/img2.png';
+// import img3 from '@/public/assets/necklaces/img3.png';
+// import img4 from '@/public/assets/necklaces/img4.png';
+
+import img1 from '@/public/assets/necklaces/try.jpg';
+import img2 from '@/public/assets/necklaces/try2.jpg';
+import img3 from '@/public/assets/necklaces/try3.jpg';
+import img4 from '@/public/assets/necklaces/try4.jpg';
+
 import img5 from '@/public/assets/necklaces/img5.png';
 import img6 from '@/public/assets/necklaces/img6.png';
 import img7 from '@/public/assets/necklaces/img7.png';
