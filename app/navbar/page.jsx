@@ -60,7 +60,7 @@ const Navbar = () => {
             className="w-full z-50 transition-all duration-300 bg-gradient-to-r from-BrownDark via-BrownMid to-BrownDark fixed overflow-hidden"
         >
             <Header />
-            <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-3 px-2">
                 <div className="flex items-center justify-center h-16">
 
                     <div className="hidden md:flex items-center space-x-8">
@@ -78,26 +78,27 @@ const Navbar = () => {
                             className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
                             aria-label="Toggle dark mode"
                         >
-                            {isDarkMode ? (
+                            {/* {isDarkMode ? (
                                 <FaSun className="h-5 w-5 text-yellow-500" />
                             ) : (
                                 <FaMoon className="h-5 w-5 text-slate-50" />
-                            )}
+                            )} */}
+
                         </button>
                     </div>
 
-                    <div className="md:hidden flex items-center justify-between w-full bg-gradient-to-r from-BrownDark via-BrownMid to-BrownDark">
-                        <button
-                            onClick={toggleDarkMode}
-                            className="p-2 mr-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
-                            aria-label="Toggle dark mode"
-                        >
-                            {isDarkMode ? (
-                                <FaSun className="h-5 w-5 text-yellow-500" />
-                            ) : (
-                                <FaMoon className="h-5 w-5 text-gray-700" />
-                            )}
-                        </button>
+                    <div className="md:hidden py-3 flex items-center justify-between w-full bg-gradient-to-r from-BrownDark via-BrownMid to-BrownDark">
+
+                        <div  className="w-full h-full p-3">
+                            <Image
+                                src={Brand}
+                                alt="brand"
+                                width={100}
+                                height={100}
+                                className="w-1/5 h-auto"
+                            />
+                        </div>
+
                         <button
                             onClick={toggleMenu}
                             className="p-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
@@ -115,10 +116,10 @@ const Navbar = () => {
 
             {/* Mobile menu */}
             <div
-                className={`md:hidden fixed inset-0 z-40 h-full bg-goldMid transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
+                className={`md:hidden fixed inset-0 z-40 h-full bg-goldMid transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full px-3"
                     }`}
             >
-                <div className="w-full justify-between flex items-center p-4 bg-gradient-to-r from-BrownDark via-BrownMid to-BrownDark bg-BrownMid">
+                <div className="w-full justify-between flex items-center bg-gradient-to-r from-BrownDark via-BrownMid to-BrownDark bg-BrownMid">
                     <div>
                         <Image
                             src={Brand}
@@ -131,7 +132,7 @@ const Navbar = () => {
                     </div>
                     <RxCross2
                         onClick={() => setIsOpen(!open)}
-                        className="text-white h-6 w-6 font-bold" />
+                        className="text-white h-6 w-6 font-bold m-3" />
                 </div>
 
                 <div className="flex flex-col h-full py-5 px-4 bg-BrownDark">

@@ -79,4 +79,4 @@ const All  = () => {
     )
 }
 
-export default Alll 
+export default All
