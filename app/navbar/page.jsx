@@ -19,6 +19,7 @@ const Navbar = () => {
         { title: "Home", path: "/" },
         { title: "Necklaces", path: "/necklace" },
         { title: "Bracelet", path: "/bracelet" },
+        { title: "Earrings", path: "/earrings" },
         { title: "Rings", path: "/rings" },
         { title: "Pendent", path: "/pendent" },
         { title: "Ankle Bracelets", path: "/ankle" },
