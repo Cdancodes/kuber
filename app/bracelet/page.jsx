@@ -8,9 +8,9 @@ import Accordion from '../components/according/page';
 import Card from '../components/cards/page';
 
 
-import img1 from '@/public/assets/bracelets/img1.png';
-import img2 from '@/public/assets/bracelets/img2.png';
-import img3 from '@/public/assets/bracelets/img3.png';
+import img1 from '@/public/assets/bracelets/br1.jpg';
+import img2 from '@/public/assets/bracelets/br2.jpg';
+import img3 from '@/public/assets/bracelets/br3.jpg';
 import img4 from '@/public/assets/bracelets/img4.png';
 import img5 from '@/public/assets/bracelets/img5.png';
 import img6 from '@/public/assets/bracelets/img6.png';

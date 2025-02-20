@@ -13,10 +13,10 @@ import Card from '../components/cards/page';
 // import img3 from '@/public/assets/necklaces/img3.png';
 // import img4 from '@/public/assets/necklaces/img4.png';
 
-import img1 from '@/public/assets/necklaces/try.jpg';
-import img2 from '@/public/assets/necklaces/try2.jpg';
-import img3 from '@/public/assets/necklaces/try3.jpg';
-import img4 from '@/public/assets/necklaces/try4.jpg';
+import img1 from '@/public/assets/necklaces/neck1.jpg';
+import img2 from '@/public/assets/necklaces/neck2.jpg';
+import img3 from '@/public/assets/necklaces/neck3.jpg';
+import img4 from '@/public/assets/necklaces/neck4.jpg';
 
 import img5 from '@/public/assets/necklaces/img5.png';
 import img6 from '@/public/assets/necklaces/img6.png';

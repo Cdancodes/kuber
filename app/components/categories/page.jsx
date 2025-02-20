@@ -2,6 +2,7 @@
 "use client";
 
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import React from 'react';
 import simg1 from '@/public/assets/categories/img1.png';
 import simg2 from '@/public/assets/categories/img2.png';
@@ -52,62 +53,62 @@ const page = () => {
 
         <div className="w-full justify-center flex flex-wrap md:-m-2 -m-1">
           <div className="flex flex-wrap w-1/2">
-            <div className="md:p-2 p-1 w-full">
-              <Image
-                alt="gallery"
-                className={sty}
-                height={100}
-                width={100}
-                layout='responsive'
-                src={Limg1} />
-            </div>
-            <div className="md:p-2 p-1 w-1/2">
-              <Image
-                alt="gallery"
-                className={sty}
-                height={100}
-                width={100}
-                layout='responsive'
-                src={simg1} />
-            </div>
-            <div className="md:p-2 p-1 w-1/2">
-              <Image
-                alt="gallery"
-                className={sty}
-                height={100}
-                layout='responsive'
-                width={100}
-                src={simg2} />
-            </div>
+            <motion.div
+              className="md:p-2 p-1 w-full"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <Image alt="gallery" className={sty} height={100} width={100} layout="responsive" src={Limg1} />
+            </motion.div>
+            <motion.div
+              className="md:p-2 p-1 w-1/2"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <Image alt="gallery" className={sty} height={100} width={100} layout="responsive" src={simg1} />
+            </motion.div>
+            <motion.div
+              className="md:p-2 p-1 w-1/2"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <Image alt="gallery" className={sty} height={100} width={100} layout="responsive" src={simg2} />
+            </motion.div>
           </div>
           <div className="flex flex-wrap w-1/2">
-            <div className="md:p-2 p-1 w-1/2">
-              <Image
-                alt="gallery"
-                className={sty}
-                height={100}
-                layout='responsive'
-                width={100}
-                src={simg1} />
-            </div>
-            <div className="md:p-2 p-1 w-1/2">
-              <Image
-                alt="gallery"
-                className={sty}
-                height={100}
-                layout='responsive'
-                width={100}
-                src={simg2} />
-            </div>
-            <div className="md:p-2 p-1 w-full">
-              <Image
-                alt="gallery"
-                className={sty}
-                height={100}
-                layout='responsive'
-                width={100}
-                src={Limg2} />
-            </div>
+            <motion.div
+              className="md:p-2 p-1 w-1/2"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <Image alt="gallery" className={sty} height={100} width={100} layout="responsive" src={simg1} />
+            </motion.div>
+            <motion.div
+              className="md:p-2 p-1 w-1/2"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <Image alt="gallery" className={sty} height={100} width={100} layout="responsive" src={simg2} />
+            </motion.div>
+            <motion.div
+              className="md:p-2 p-1 w-full"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <Image alt="gallery" className={sty} height={100} width={100} layout="responsive" src={Limg2} />
+            </motion.div>
           </div>
         </div>
       </div>

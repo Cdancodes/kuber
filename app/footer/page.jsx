@@ -3,9 +3,6 @@
 import React from 'react';
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-import { BiSolidPlane, BiSupport } from 'react-icons/bi';
-import { AiOutlineReload } from 'react-icons/ai';
-import { MdPrivacyTip } from 'react-icons/md';
 import NewsLetter from '../components/newsLetter/NewsLetter';
 import Purity from '../components/purity/Purity';
 import Link from "next/link";
@@ -52,7 +49,7 @@ const Footer = () => {
       <NewsLetter />
 
       {/* Main Footer Content */}
-      <div className="mx-auto px-[8%] pt-32 pb-16 bg-footerColor">
+      <div className="container mx-auto px-4 pt-32 pb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* About Section */}
           <div className="space-y-6">
@@ -105,7 +102,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Section */}
-          <div className='flex flex-col space-y-4'>
+          <div className='w-full flex flex-col space-y-4'>
             <div>
               <h2 className="font-semibold text-BrownMid tracking-widest text-md mb-6">ABOUT US</h2>
               <div className="space-y-3 flex flex-col">
