@@ -8,21 +8,21 @@ import Accordion from '../components/according/page';
 import Card from '../components/cards/page';
 
 
-import img1 from '@/public/assets/All/img1.png';
-import img2 from '@/public/assets/All/img2.png';
-import img3 from '@/public/assets/All/img3.png';
-import img4 from '@/public/assets/All/img4.png';
-import img5 from '@/public/assets/All/img5.png';
-import img6 from '@/public/assets/All/img6.png';
-import img7 from '@/public/assets/All/img7.png';
-import img8 from '@/public/assets/All/img8.png';
-import img9 from '@/public/assets/All/img9.png';
-import img10 from '@/public/assets/All/img10.png';
-import img11 from '@/public/assets/All/img11.png';
-import img12 from '@/public/assets/All/img12.png';
-import img13 from '@/public/assets/All/img13.png';
-import img14 from '@/public/assets/All/img14.png';
-import img15 from '@/public/assets/All/img15.png';
+import img1 from '@/public/assets/ankle/Bangle1.jpg';
+import img2 from '@/public/assets/Earing/Earrings3.jpg';
+import img3 from '@/public/assets/Ring/Ring1.jpg';
+import img4 from '@/public/assets/bracelets/Bracelet3.jpg';
+import img5 from '@/public/assets/Ring/Ring2.jpg';
+import img6 from '@/public/assets/bracelets/Bracelet1.jpg';
+import img7 from '@/public/assets/ankle/Bangle2.jpg';
+import img8 from '@/public/assets/necklaces/imgneck1.jpg';
+import img9 from '@/public/assets/necklaces/neck3.jpg';
+import img10 from '@/public/assets/Ring/Ring2.jpg';
+import img11 from '@/public/assets/ankle/Bangle2.jpg';
+import img12 from '@/public/assets/Ring/Ring3.jpg';
+import img13 from '@/public/assets/Pendent/Mangalsutra2.jpg';
+import img14 from '@/public/assets/Ring/Ring4.jpg';
+import img15 from '@/public/assets/Earing/Earrings4.jpg';
 
 
 const All  = () => {
@@ -55,17 +55,11 @@ const All  = () => {
 
             <section className="w-full min-h-screen pb-16">
                 <div className="container mx-auto px-4 py-8">
-                    <div className="flex flex-col lg:flex-row gap-8">
-                        {/* Sidebar */}
-                        <div className="w-full lg:w-1/4">
-                            <div className="sticky top-4">
-                                <Accordion />
-                            </div>
-                        </div>
+                    <div className="flex flex-col lg:flex-row gap-8 justify-center">
 
                         {/* Main Content */}
-                        <div className="w-full lg:w-3/4">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div className="w-full lg:w-3/4 py-10">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                                 {images.map((item, index) => (
                                     <Card key={index} img={item.img} title={item.title} desc={item.desc} />
                                 ))}

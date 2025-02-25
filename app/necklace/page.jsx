@@ -8,10 +8,10 @@ import Accordion from '../components/according/page';
 import Card from '../components/cards/page';
 
 
-import img1 from '@/public/assets/necklaces/img1.png';
-import img2 from '@/public/assets/necklaces/img2.png';
-import img3 from '@/public/assets/necklaces/img3.png';
-import img4 from '@/public/assets/necklaces/img4.png';
+import img1 from '@/public/assets/necklaces/imgneck1.jpg';
+import img2 from '@/public/assets/necklaces/neck2.jpg';
+import img3 from '@/public/assets/necklaces/neck3.jpg';
+import img4 from '@/public/assets/necklaces/neck4.jpg';
 import img5 from '@/public/assets/necklaces/img5.png';
 import img6 from '@/public/assets/necklaces/img6.png';
 import img7 from '@/public/assets/necklaces/img7.png';
@@ -47,25 +47,17 @@ const Neckles = () => {
 
     return (
 
-        <div className='w-full h-full mx-auto bg-white'>
+        <div className='w-full  min-h-[800px]  mx-auto bg-white'>
 
-            <div className='w-full'>
                 <CarouselImg Img={carImg} />
-            </div>
+         
 
-            <section className="w-full min-h-screen pb-16">
+            <section className="w-full pb-16">
                 <div className="container mx-auto px-4 py-8">
-                    <div className="flex flex-col lg:flex-row gap-8">
-                        {/* Sidebar */}
-                        <div className="w-full lg:w-1/4">
-                            <div className="sticky top-4">
-                                <Accordion />
-                            </div>
-                        </div>
-
-                        {/* Main Content */}
-                        <div className="w-full lg:w-3/4">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div className="flex flex-col lg:flex-row gap-8 justify-center">
+                       
+                        <div className="w-full lg:w-3/4 py-10">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                                 {images.map((item, index) => (
                                     <Card key={index} img={item.img} title={item.title} desc={item.desc} />
                                 ))}

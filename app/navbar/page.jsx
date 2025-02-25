@@ -1,13 +1,13 @@
 
 "use client";
 
-import { useState, useEffect } from "react";
-import { FaBars, FaTimes, FaSun, FaMoon } from "react-icons/fa";
 import Brand from "@/public/assets/brand.png";
 import Image from "next/image";
-import Header from "../header/page";
-import { RxCross2 } from "react-icons/rx";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { RxCross2 } from "react-icons/rx";
+import Header from "../header/page";
 
 const Navbar = () => {
     const router = useRouter();
@@ -20,10 +20,11 @@ const Navbar = () => {
         { title: "Necklaces", path: "/necklace" },
         { title: "Bracelet", path: "/bracelet" },
         { title: "Rings", path: "/rings" },
-        { title: "Pendent", path: "/pendent" },
-        { title: "Ankle Bracelets", path: "/ankle" },
+        { title: "Mangalsutra", path: "/mangalsutra" },
+        { title: "Bangles", path: "/ankle" },
+        { title: "Earring", path: "/earrings" },
         { title: "All", path: "/all" },
-        { title: "Track My Order", path: "/" }
+        { title: "About Us", path: "/aboutUs" }
     ];
 
     useEffect(() => {

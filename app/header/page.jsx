@@ -11,9 +11,8 @@ import { TiShoppingCart } from "react-icons/ti";
 import Image from 'next/image';
 
 const Header = () => {
-    const [cartCount, setCartCount] = React.useState(0);
 
-    const sty = "text-slate-50 h-6 w-6";
+    const sty = "text-slate-50 h-6 w-6 cursor-pointer";
     const iconsty = "cursor-pointer h-5 w-5 text-defaultColor";
 
     return (

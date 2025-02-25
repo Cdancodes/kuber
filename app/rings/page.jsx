@@ -3,15 +3,15 @@
 
 import React from 'react';
 import CarouselImg from '../components/carouselimg/page';
-import carImg from '@/public/assets/Ring/Cimg.png';
+import carImg from '@/public/assets/Ring/rb.jpg';
 import Accordion from '../components/according/page';
 import Card from '../components/cards/page';
 
 
-import img1 from '@/public/assets/Ring/img1.png';
-import img2 from '@/public/assets/Ring/img2.png';
-import img3 from '@/public/assets/Ring/img3.png';
-import img4 from '@/public/assets/Ring/img4.png';
+import img1 from '@/public/assets/Ring/Ring1.jpg';
+import img2 from '@/public/assets/Ring/Ring2.jpg';
+import img3 from '@/public/assets/Ring/Ring3.jpg';
+import img4 from '@/public/assets/Ring/Ring4.jpg';
 import img5 from '@/public/assets/Ring/img5.png';
 import img6 from '@/public/assets/Ring/img6.png';
 import img7 from '@/public/assets/Ring/img7.png';
@@ -55,17 +55,11 @@ const Bracelet = () => {
 
             <section className="w-full min-h-screen pb-16">
                 <div className="container mx-auto px-4 py-8">
-                    <div className="flex flex-col lg:flex-row gap-8">
-                        {/* Sidebar */}
-                        <div className="w-full lg:w-1/4">
-                            <div className="sticky top-4">
-                                <Accordion />
-                            </div>
-                        </div>
+                    <div className="flex flex-col lg:flex-row gap-8 justify-center">
 
                         {/* Main Content */}
                         <div className="w-full lg:w-3/4">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                                 {images.map((item, index) => (
                                     <Card key={index} img={item.img} title={item.title} desc={item.desc} />
                                 ))}

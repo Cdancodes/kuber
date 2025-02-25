@@ -13,41 +13,14 @@ import PageHeading from '../pageTitle/PageTitle';
 
 const page = () => {
 
-  const data = [
-    { id: 1, title: "Earrings" },
-    { id: 2, title: "Necklace" },
-    { id: 3, title: "Bracelet" },
-    { id: 4, title: "Bangles" },
-  ];
-
-  const sty = "w-full h-full object-cover object-center block hover:scale-105 inline-block transition-transform duration-200";
+  const sty = "w-full h-full object-cover object-center block hover:scale-95 inline-block transition-transform duration-200";
 
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto flex flex-wrap justify-center w-full">
 
-        <div className="flex w-full mb-20 justify-center text-center flex-col">
-
+        <div className="flex w-full my-20 justify-center text-center flex-col">
           <PageHeading title="Shop By Categories" />
-
-          <section className="text-gray-600 body-font">
-            <div className="container px-5 py-10 mx-auto">
-              <div className="flex flex-wrap -m-4 text-center">
-                {data?.map((item) => (
-                  <div key={item.id} className="p-4 sm:w-1/4 w-1/2">
-                    <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900 relative group">
-                      <span className="relative inline-block">
-                        {item.title}
-                        <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-defaultColor transition-all duration-300 group-hover:w-full"
-                          style={{ marginBottom: '3px' }}>
-                        </span>
-                      </span>
-                    </h2>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
         </div>
 
         <div className="w-full justify-center flex flex-wrap md:-m-2 -m-1">

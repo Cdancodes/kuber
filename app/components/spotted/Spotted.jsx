@@ -1,16 +1,16 @@
 "use client"
 
 import React from 'react';
-import Rectangle67 from '@/public/assets/spotted/Rectangle67.png';
-import Rectangle68 from '@/public/assets/spotted/Rectangle68.png';
-import Rectangle69 from '@/public/assets/spotted/Rectangle69.png';
+import img10 from '@/public/assets/necklaces/neck4.jpg';
+import img11 from '@/public/assets/bracelets/Bracelet2.jpg';
+import img12 from '@/public/assets/Ring/Ring3.jpg';
 import PageTitle from '../pageTitle/PageTitle';
 import Image from 'next/image';
 
 const spottedData = [
-    { src: Rectangle67, text: "" },
-    { src: Rectangle68, text: "" },
-    { src: Rectangle69, text: "" }
+    { src: img10, text: "" },
+    { src: img11, text: "" },
+    { src: img12, text: "" }
 ];
 
 const Spotted = () => {

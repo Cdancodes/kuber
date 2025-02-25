@@ -5,9 +5,10 @@ import Image from "next/image";
 import { Antic_Slab, Poppins } from "next/font/google";
 // import CustomButton from "../components/customButton/CustomButton";
 // import Gimg from '@/public/assets/carousel/Cimg.png';
-import manbgimg from '@/public/assets/carousel/manbgimg.png';
-import sideimage from '@/public/assets/carousel/sideimage.png';
-import { motion } from 'framer-motion';
+import { useRouter } from "next/navigation";
+import manbgimg from "@/public/assets/carousel/manbgimg.png";
+import sideimage from "@/public/assets/carousel/sideimage.png";
+import { motion } from "framer-motion";
 
 const anticSlab = Antic_Slab({
   subsets: ["latin"],
@@ -21,11 +22,15 @@ const poppins = Poppins({
 });
 
 const Carousel = () => {
+  const router = useRouter();
 
+  const stt =
+    "text-xl leading-relaxed max-w-md text-defaultColor sm:text-[#787054] font-serif leading-8 tracking-wide";
 
+    const tt = "text-sm my-1 "
 
   return (
-    <div className='relative w-full lg:px-16 pt-28 md:pt-0 md:px-10'>
+    <div className="relative w-full lg:px-16 pt-28 md:pt-0 md:px-10">
       {/* Background Image Container with Next.js Image */}
       <div className="hidden md:block absolute inset-0 w-full h-[74vh] -z-10">
         <Image
@@ -50,24 +55,42 @@ const Carousel = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="md:w-1/2 w-full z-20 text-center flex flex-col items-center md:items-start mb-10 md:mb-0 md:text-left pt-20"
+              className="md:w-1/2 w-full z-20 text-center flex flex-col items-center md:items-start mb-10 md:mb-0 md:text-left pt-20 "
             >
-              <h1 className={`${anticSlab.className} title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 font-anticSlab`}>
-                IMPECCABLE CRAFTSMANSHIP 
-                <br className="hidden lg:inline-block" />AND FINESSE
+              <h1
+                className={`${anticSlab.className} title-font sm:text-4xl text-2xl mt-10 mb-1 md:mb-6 font-bold text-gray-900 font-anticSlab`}
+              >
+                CELEBRATE EVERY MOMENT
+                <br className="hidden lg:inline-block" />
+                IN STYLE
               </h1>
-              <p className="mb-8 leading-relaxed max-w-md text-defaultColor sm:text-[#787054]">
-                An example of intricate workmanship and details, elegant necklaces and long and short chains form a part of our desirable collection.
+              <p className={`${stt} hidden`}>
+                Elevate Your Look with Our Handcrafted Jewelry.
+              </p>
+
+              <p className={tt}>
+                Elegant Necklaces, Sparkling Rings, and Chic Bracelets –
+                Tailored for You.
+              </p>
+              <p className={tt}> Crafted with Care, Our Designs Speak of Luxury and Class.</p>
+              <p className={tt}>
+                {" "}
+                From Classic to Contemporary, We Have the Perfect Piece for
+                Every Occasion.
               </p>
 
               <motion.button
-                whileHover={{ scale: 1.1, boxShadow: "0px 0px 15px rgba(255, 183, 0, 0.7)" }}
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 15px rgba(255, 183, 0, 0.7)",
+                }}
                 whileTap={{ scale: 0.9 }}
+                onClick={() => router.push("/all")}
                 className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none 
               hover:bg-indigo-600 rounded-full text-lg bg-gradient-to-r from-[#FFB700] to-[#dba51c] shadow-lg 
-              shadow-yellow-500/50"
+              shadow-yellow-500/50 mt-4"
               >
-                Explore Now
+                Read More...
               </motion.button>
             </motion.div>
 
@@ -80,15 +103,15 @@ const Carousel = () => {
             >
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="relative h-[50vh] md:h-[45vh] lg:h-[65vh] w-full md:w-auto"
+                className="relative h-[50vh] md:h-[45vh] lg:h-[65vh] w-full md:w-auto pt-20 sm:pt-5"
               >
                 <Image
                   src={sideimage}
                   alt="Hero"
-                  layout='responsive'
+                  layout="responsive"
                   height={100}
                   width={100}
-                  className="object-cover rounded z-10"
+                  className="object-cover rounded z-10 pt-2"
                 />
               </motion.div>
             </motion.div>
